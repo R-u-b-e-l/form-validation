@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>User information</legend>
+      <form>
+        <label for="txt">USERNAME :</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="username"
+          name="username"
+          required
+        /><br /><br />
+
+        <label for="age">AGE</label>
+        <input
+          type="number"
+          id="age"
+          min="18"
+          max="50"
+          placeholder="age"
+          name="age"
+          required
+        /><br /><br />
+
+        <label for="birth">Date of birth</label>
+        <input type="date" , id="birth" name="birth" required /> <br /><br />
+
+        <label for="gndr">Gender : </label><t /><label>Male :</label>
+        <input type="radio" id="gndr" name="gender" required checked />
+        <label>Female :</label>
+        <input type="radio" id="gndr" name="gender" required /><br /><br />
+
+        <label for="img">IMAGE :</label>
+        <input
+          type="file"
+          id="img"
+          accept="Image"
+          name="img"
+          required
+        /><br /><br />
+
+        <label for="dstic">DISTRICT :</label>
+        <select name="district" id="district" required>
+          <option value="dhaka">Dhaka</option>
+          <option value="rajshahi">Rajshahi</option>
+          <option value="borisal">Borisal</option>
+          <option value="sylhet">Sylhet</option>
+          <option value="rongpur">Rangpur</option>
+          <option value="chottogram">Chottogram</option></select
+        ><br /><br />
+
+        <label for="text">PHONE :</label>
+        <input
+          type="text"
+          pattern="[0-9]{11}"
+          placeholder="mobile"
+          name="phone"
+          required
+        /><br /><br />
+
+        <button>SUBMIT</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
